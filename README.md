@@ -18,12 +18,13 @@ Blynk python 구성품 키트 정보는 아래 페이지를 참고 해 주세요
 
 https://github.com/vshymanskyy/blynk-library-python
 위 라이브러리를 설치 후 파일을 실행해 주면 됩니다.
+
 ``sudo puthon3 blynk_python_GPIO.py``
 
 >라즈베리파이에서 위 라이브러리 설치 시 아래 명령으로 실행해야 합니다.
 >(python3 사용)
 
-``sudo pip3 install blynk-library-python``
+>``sudo pip3 install blynk-library-python``
 
 
 
