@@ -17,6 +17,7 @@ Blynk python 구성품 키트 정보는 아래 페이지를 참고 해 주세요
 ## blynk_python_GPIO.py
 
 https://github.com/vshymanskyy/blynk-library-python
+
 위 라이브러리를 설치 후 파일을 실행해 주면 됩니다.
 
 ``sudo puthon3 blynk_python_GPIO.py``
