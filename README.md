@@ -36,8 +36,9 @@ http://fritzing.org/home/
 ## blynk_GPIO.png
 회로 구성 이미지 파일입니다.  
 ![blynk_GPIO](https://raw.githubusercontent.com/eleparts/blynk_python_GPIO/master/blynk_GPIO.png)  
-> LED 저항 : 110~220옴  
-> SW 저항 : 1K~10K옴 (풀다운 저항)  
+> LED 저항 : 110 ~ 220옴  
+> SW 저항 : 1K ~ 10K옴 (풀다운 저항)  
+
 예제코드 동작 전에 해당 회로를 똑같이 구성해 주셔야 합니다.  
 
 
