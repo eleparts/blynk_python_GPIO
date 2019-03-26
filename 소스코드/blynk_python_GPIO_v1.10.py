@@ -98,7 +98,7 @@ def hello_world():
 
 # Add Timers
 timer.set_interval(2, my_user_task)     # my_user_task / 호출 주기 2초 - 타이머
-timer.set_timeout(1, hello_world)       # 최초 1회, 1초후 실행
+timer.set_timeout(1, hello_world!!!)       # 최초 1회, 1초후 실행
 
 # Start Blynk, Start timer
 while True:
