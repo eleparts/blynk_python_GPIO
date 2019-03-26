@@ -27,7 +27,7 @@ https://github.com/vshymanskyy/blynk-library-python
 
 타이머 라이브러리를 다운로드하는 스크립트를 실행해야 합니다.  
 >``chmod +x start.sh``  
->``./start.xh``  
+>``./start.sh``  
 
 
 
@@ -61,8 +61,8 @@ http://fritzing.org/home/
 > my_user_task 작업으로 구성되어 있습니다.  
   
 - blynk_python_GPIO_v1.01  
-VIRTUAL_READ 에서 **호출될 때마다 GPIO값을 터미널로 출력**하는 부분을 **변경되는 시점에서 1회 출력**으로 수정하였습니다.
+VIRTUAL_READ 에서 **호출될 때마다 GPIO값을 터미널로 출력**하는 부분을 **변경되는 시점에서 1회 출력**으로 수정하였습니다.  
 
-- blynk_python_GPIO_v1.10
-blynk.set_user_task 함수가 삭제되고 타이머 라이브러리가 추가되었습니다.
-타이머 라이브러리를 다운로드 하기 위하여 start.sh 스크립트가 추가되었습니다.
+- blynk_python_GPIO_v1.10  
+blynk.set_user_task 함수가 삭제되고 타이머 라이브러리가 추가되었습니다.  
+타이머 라이브러리를 다운로드 하기 위하여 start.sh 스크립트가 추가되었습니다.  
