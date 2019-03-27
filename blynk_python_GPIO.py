@@ -34,7 +34,7 @@ GPIO.setup(16,GPIO.IN)
 def my_write_handler(value):
  
   print('Current V1 value: {}'.format(value))
-  if(value == '1'):
+  if(value == ['1']):
     GPIO.output(21, 1)
   else:
     GPIO.output(21, 0)
@@ -44,7 +44,7 @@ def my_write_handler(value):
 def my_write_handler(value):
 
   print('Current V2 value: {}'.format(value))
-  if(value == '1'):
+  if(value == ['1']):
     GPIO.output(20, 1)
   else:
     GPIO.output(20, 0)
