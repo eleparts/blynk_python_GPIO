@@ -23,7 +23,9 @@ https://github.com/vshymanskyy/blynk-library-python
 
 라즈베리파이에서 위 라이브러리 설치 시 아래 명령으로 실행해야 합니다.  
 >(python3 사용)  
->``sudo pip3 install blynk-library-python``  
+>``pip3 install blynk-library-python``  
+>다운로드 실패 시 앞에 ``sudo`` 를 붙이거나, ``pip install blynk-library-python`` 등으로 시도  
+
 
 타이머 라이브러리를 다운로드하는 스크립트를 실행해야 합니다.  
 >``chmod +x start.sh``  
