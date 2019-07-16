@@ -25,7 +25,7 @@ timer = BlynkTimer()
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(21,GPIO.OUT)
 GPIO.setup(20,GPIO.OUT)
-GPIO.setup(16,GPIO.IN)
+GPIO.setup(16,GPIO.IN, GPIO.PUD_DOWN)
 
 
 # Register Virtual Pins
