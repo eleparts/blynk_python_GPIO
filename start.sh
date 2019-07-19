@@ -1,5 +1,5 @@
 #!/bin/sh
 
-echo "Download BlynkTimer.py"
-echo "URL https://github.com/vshymanskyy/blynk-library-python"
-wget -O BlynkTimer.py https://github.com/vshymanskyy/blynk-library-python/blob/master/BlynkTimer.py?raw=true
+echo "Download blynktimer.py - Fork file : 2019-07-19"
+echo "URL https://github.com/eleparts/lib-python/blob/master/blynktimer.py"
+wget -O blynktimer.py https://github.com/eleparts/lib-python/blob/master/blynktimer.py?raw=true
