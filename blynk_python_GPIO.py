@@ -40,46 +40,46 @@ READ_PRINT_MSG = "[READ_VIRTUAL_PIN_EVENT] Pin: V{}"
 # blynk앱에서 버튼 누를경우 동작 - write (Virtual Pins 1)
 @blynk.handle_event('write V1')
 def write_virtual_pin_handler(pin, value):
-  print(WRITE_EVENT_PRINT_MSG.format(pin,value))
+    print(WRITE_EVENT_PRINT_MSG.format(pin,value))
 
-  if(value == ['1']):
-    GPIO.output(21, 1)
-  else:
-    GPIO.output(21, 0)
+    if(value == ['1']):
+        GPIO.output(21, 1)
+    else:
+        GPIO.output(21, 0)
 
 # blynk앱에서 버튼 누를경우 동작 - write (Virtual Pins 2)
 @blynk.handle_event('write V2')
 def write_virtual_pin_handler(pin, value):
-  print(WRITE_EVENT_PRINT_MSG.format(pin,value))
+    print(WRITE_EVENT_PRINT_MSG.format(pin,value))
 
-  if(value == ['1']):
-    GPIO.output(20, 1)
-  else:
-    GPIO.output(20, 0)
+    if(value == ['1']):
+        GPIO.output(20, 1)
+    else:
+        GPIO.output(20, 0)
 
 
 # blynk앱에서 주기적으로 호출하도록 설정 - Read (Virtual Pins 3)
 @blynk.handle_event('read V3')
 def read_virtual_pin_handler(pin):
-  
-  SW = GPIO.input(16)
+    
+    SW = GPIO.input(16)
 
-  try:  
-    if(SW != read_virtual_pin_handler.lastSW):
-      print(READ_PRINT_MSG.format(pin))
-      print("SW GPIO value : %d "% (SW))
+    try:  
+        if(SW != read_virtual_pin_handler.lastSW):
+            print(READ_PRINT_MSG.format(pin))
+            print("SW GPIO value : %d "% (SW))
 
-      if(SW):
-        blynk.virtual_write(3, " ON")
-        read_virtual_pin_handler.lastSW = SW
-        
-      else:
-        blynk.virtual_write(3, "OFF")
-        read_virtual_pin_handler.lastSW = SW
+            if(SW):
+                blynk.virtual_write(3, " ON")
+                read_virtual_pin_handler.lastSW = SW
+                
+            else:
+                blynk.virtual_write(3, "OFF")
+                read_virtual_pin_handler.lastSW = SW
 
-  # 최초 1회 - 스위치 기존 value값 저장용 변수 선언
-  except AttributeError:
-    read_virtual_pin_handler.lastSW = False
+    # 최초 1회 - 스위치 기존 value값 저장용 변수 선언
+    except AttributeError:
+        read_virtual_pin_handler.lastSW = False
 
 
 
@@ -87,30 +87,30 @@ def read_virtual_pin_handler(pin):
 # timer : 설정해 둔 시간마다 실행됨
 @timer.register(interval=1, run_once=True) # 최초 1회, 1초후 실행
 def hello_world():
-  print("Hello World!")
+    print("Hello World!")
 
 
 @timer.register(interval=2, run_once=False) # 2초마다 반복실행
 def my_user_task():
 
-  try:
-    if(my_user_task.LED_flag):
-      blynk.virtual_write(4, 255)   # Vpin =  V4, value = 255
-      my_user_task.LED_flag = False
-      #print("V4 LED ON")
-    else:
-      blynk.virtual_write(4, 0)     # Vpin =  V4, value = 0
-      my_user_task.LED_flag = True
-      #print("V4 LED OFF")
+    try:
+        if(my_user_task.LED_flag):
+            blynk.virtual_write(4, 255)   # Vpin =  V4, value = 255
+            my_user_task.LED_flag = False
+            #print("V4 LED ON")
+        else:
+            blynk.virtual_write(4, 0)     # Vpin =  V4, value = 0
+            my_user_task.LED_flag = True
+            #print("V4 LED OFF")
 
-  # 최초 1회 변수 선언
-  except AttributeError:
-    my_user_task.LED_flag = True
-    blynk.virtual_write(4, 255)
-    #print("V4 LED ON")
+    # 최초 1회 변수 선언
+    except AttributeError:
+        my_user_task.LED_flag = True
+        blynk.virtual_write(4, 255)
+        #print("V4 LED ON")
 
 
 # Start Blynk, Start timer
 while True:
-  blynk.run()
-  timer.run()
+    blynk.run()
+    timer.run()
