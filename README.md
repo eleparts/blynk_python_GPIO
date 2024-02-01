@@ -13,21 +13,26 @@ https://github.com/eleparts/iotkit
 
 ## blynk_python_GPIO.py  
 
-https://github.com/blynkkk/lib-python  
+https://github.com/vshymanskyy/blynk-library-python
 
 위 라이브러리를 설치 후 파일을 실행해 주면 됩니다.  
-``sudo puthon3 blynk_python_GPIO.py``  
+``python blynk_python_GPIO.py``  
 
-라즈베리파이에서 위 라이브러리 설치 시 아래 명령으로 실행해야 합니다.  
->(python3 사용)  
->``pip3 install blynklib``  
->다운로드 실패 시 앞에 ``sudo``를 붙여 실행해 줍니다.  
+라즈베리파이에서 라이브러리 설치 시 아래 명령으로 실행해야 합니다.  
 
+```bash
+# 복제된 lynk-library-python 라이브러리
+git clone https://github.com/eleparts/blynk-library-python
+cd blynk-library-python
+sudo python setup.py install
+```
 
-타이머 라이브러리를 다운로드하는 스크립트를 실행해야 합니다.  
->``chmod +x start.sh``  
->``./start.sh``  
+만약 라즈베리파이5를 사용한다면 아래 명령어로 pi5 GPIO 라이브러리를 설치해 주어야 합니다.
 
+```bash
+# 반드시 라즈베리파이 5 사용시에만 설치
+pip install --break-system-packages rpi-lgpio
+```
 
 ## blynk_GPIO.fzz
 fritzing 확장자 파일입니다.  
@@ -50,7 +55,7 @@ http://fritzing.org/home/
 **소스 코드**가 버전별로  **.py** 파일로 저장되어 있습니다.
 
 
-### 버전별 기능 추가 내역
+### 버전별 변경 내역
 
 - blynk_python_GPIO_v1.00  
 기본 예제 코드입니다.  
@@ -69,13 +74,11 @@ blynk.set_user_task 함수가 삭제되고 타이머 라이브러리가 추가�
 - blynk_python_GPIO_v2.0.0  
 blynk가 공식 python 예제를 지원하게 되면서 기존 베타 버전 라이브러리와 다른 라이브러리를 사용하게 되었습니다.  
 이에 따라 해당 공식 라이브러리를 사용하도록 수정되었습니다.  
+
+- blynk_python_GPIO_v3.0.0  
+blynk 2.0 대응 라이브러리 사용을 위해 업데이트 된 기존 저장소를 이용합니다.  
+pip로 설치 시 구버전이 설치되어(0.2.6) 해당 저장소를 직접 받아 설치해야 합니다.(1.0.0)  
   
 ## old_version  
 
-Blynk python GPIO 1.x.x (구버전) 파일이 정리되어 있습니다.
-
-Blynk로 라즈베리파이 GPIO원격 제어하기(Python 버전)  
-https://blog.naver.com/elepartsblog/221343615682  
-
-위 블로그 예제와 호환됩니다.  
-  
+구버전(1.x.x / 2.x.x) 파일이 정리되어 있습니다.  
