@@ -91,6 +91,7 @@ def handler_V3():
         handler_V3.lastSW = False
 
 # 타이머 테스트용 함수 - LED ON/OFF (Virtual Pins 4)
+@blynk.on("V4")
 def LED_task():
 
     try:
