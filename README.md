@@ -5,12 +5,11 @@
 Blynk python 구성품 키트 정보는 아래 페이지를 참고 해 주세요  
 
 라즈베리파이 IOT 키트 V2.0  
-https://www.eleparts.co.kr/EPXMVGDB  
+<https://www.eleparts.co.kr/EPXMVGDB>  
 
 **위 IOT 키트와 관련된 전체 예제는 아래 페이지에서 확인 가능합니다.**  
-https://github.com/eleparts/iotkit  
-
-
+<https://github.com/eleparts/iotkit>  
+  
 ## 사용 전 필수 라이브러리  
   
 [**blynk - Python 라이브러리**](https://github.com/vshymanskyy/blynk-library-python)를 설치 후 파일을 실행해 주면 됩니다.  
@@ -24,6 +23,7 @@ sudo python setup.py install
 ```
   
 > - 라즈베리파이5를 사용한다면 추가로 pi5용 lgpio 라이브러리를 설치해 줍니다.  
+>
 > ```bash
 > # 반드시 라즈베리파이 5 사용시에만 설치
 > pip install --break-system-packages rpi-lgpio
@@ -37,22 +37,23 @@ sudo python setup.py install
 
 ## Blynk 위젯 배치  
 
-- PI - GPIO 디바이스 설정 
+- PI - GPIO 디바이스 설정  
 
 |가상핀|가상핀 설정|위젯|모드|
 |:----:|:-:|:-:| :-:|
-|V0 | integer 0/1 | Button | MODE : SWITCH | 
+|V0 | integer 0/1 | Button | MODE : SWITCH |  
 |V1 | integer 0/1 | Button | MODE : SWITCH |  
 |V2 | string| Value Display | |  
 |V4 | integer 0/255|LED | |  
   
 ## blynk_GPIO.fzz  
+
 fritzing 확장자 파일입니다.  
 fritzing이 설치되어 있다면 열어보실 수 있습니다.  
-http://fritzing.org/home/  
-
+<http://fritzing.org/home/>  
 
 ## blynk_GPIO.png  
+  
 회로 구성 이미지 파일입니다.  
 ![blynk_GPIO](https://raw.githubusercontent.com/eleparts/blynk_python_GPIO/master/blynk_GPIO.png)  
 > LED 저항 : 100 ~ 220옴  
@@ -63,8 +64,7 @@ http://fritzing.org/home/
 ## 소스코드 폴더  
 
 **소스 코드**가 버전별로  **.py** 파일로 저장되어 있습니다.  
-
-
+  
 ### 버전별 변경 내역  
 
 - blynk_python_GPIO_v3.0.0  
