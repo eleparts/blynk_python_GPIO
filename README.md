@@ -43,10 +43,9 @@ sudo python setup.py install
 |:----:|:-:|:-:| :-:|
 |V0 | integer 0/1 | Button | MODE : SWITCH | 
 |V1 | integer 0/1 | Button | MODE : SWITCH |  
-|V2 | string| Value Display | | 
-|V4 | integer 0/255|LED | | 
-------------------------------------------  
-
+|V2 | string| Value Display | |  
+|V4 | integer 0/255|LED | |  
+  
 ## blynk_GPIO.fzz  
 fritzing 확장자 파일입니다.  
 fritzing이 설치되어 있다면 열어보실 수 있습니다.  
